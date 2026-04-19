@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html lang="en"><head>
+<html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Medellin Cool Tours | Premium Local Experiences</title>
+<title>Medellín Insider Blog | Medellín Cool Tours</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
@@ -19,358 +19,326 @@
                         "background-dark": "#152111",
                     },
                     fontFamily: {
-                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                        "display": ["Plus Jakarta Sans"]
                     },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
                 },
             },
         }
     </script>
-<style>body {
-    font-family: "Plus Jakarta Sans", sans-serif
-    }
-.hero-gradient {
-    background-image: linear-gradient(rgba(21, 33, 17, 0.4), rgba(21, 33, 17, 0.7)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuBicUtYy6Z86fKnBmupQoy2PONfqlUQHgcQP1EoK4Vi9cjqYVe3VmjYsn3plC9x5EQZ7yF3K3-USFzMwbXlnUUkl619R1PrZN4n8aQl_CCypFqRXfnCAbPJ52lBqq_y2eo2yXczzvDfSSHVlndHLX-Rxy0UEJY6JQMIgFHU3gvZyqJpScIAl3vuYGrBDfIQTwdIDtGwrv4cu-CPr-ehy8mn_Whb2pWHARlCF8jRQCIJNHezrzUTSK4pqzG5q-Stj5bJJg6FmULl6ME)
-    }</style>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
-<!-- Top Navigation Bar -->
-<header class="sticky top-0 z-50 w-full bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10">
-<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Header Section -->
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-6 md:px-10 py-4">
+<div class="mx-auto max-w-7xl flex items-center justify-between gap-8">
+<div class="flex items-center gap-8">
 <div class="flex items-center gap-3">
-<div class="bg-primary p-2 rounded-lg">
-<span class="material-symbols-outlined text-background-dark">landscape</span>
+<div class="size-8 bg-primary flex items-center justify-center rounded-lg text-background-dark">
+<span class="material-symbols-outlined text-xl">travel_explore</span>
 </div>
-<h1 class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">medellincool<span class="text-primary">.tours</span></h1>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-extrabold leading-tight tracking-tight">Medellín Cool Tours</h2>
 </div>
-<nav class="hidden md:flex items-center gap-10">
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Home</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#tours">Tours</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">About Us</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Reviews</a>
-<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Contact</a>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm font-semibold" href="#">Tours</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm font-semibold" href="#">Experiences</a>
+<a class="text-slate-900 dark:text-primary transition-colors text-sm font-semibold" href="#">Blog</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary transition-colors text-sm font-semibold" href="#">Contact</a>
 </nav>
-<div class="flex items-center gap-4">
-<button class="bg-primary hover:bg-primary/90 text-background-dark px-6 py-2.5 rounded-lg font-bold text-sm transition-all shadow-lg shadow-primary/20">
-                    Book Now
-                </button>
+</div>
+<div class="flex flex-1 justify-end gap-6 items-center">
+<div class="hidden md:flex flex-1 max-w-xs">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+<input class="w-full pl-10 pr-4 py-2 rounded-xl border-none bg-slate-100 dark:bg-slate-800 focus:ring-2 focus:ring-primary text-sm" placeholder="Search stories..." type="text"/>
 </div>
 </div>
-</header>
-<main>
-<!-- Hero Section -->
-<section class="relative h-[85vh] flex items-center justify-center overflow-hidden">
-<div class="absolute inset-0 hero-gradient bg-cover bg-center" data-alt="Cinematic aerial view of Medellin valley at sunset"></div>
-<div class="relative z-10 max-w-4xl px-6 text-center">
-<div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full mb-6">
-<span class="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
-<span class="text-xs font-bold text-white uppercase tracking-widest">Experience the eternal spring</span>
-</div>
-<h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight tracking-tight">
-                    Discover the Magic of <span class="text-primary">Medellín</span>
-</h1>
-<p class="text-xl text-slate-200 mb-10 max-w-2xl mx-auto font-medium">
-                    Experience premium, curated tours through the City of Eternal Spring with Medellín's highest-rated local guides.
-                </p>
-<div class="flex flex-col sm:flex-row gap-4 justify-center">
-<a class="bg-primary text-background-dark px-10 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform flex items-center justify-center gap-2" href="#tours">
-                        Explore Tours <span class="material-symbols-outlined">arrow_downward</span>
-</a>
-<button class="bg-white/10 backdrop-blur-md border border-white/30 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-all">
-                        Watch Video
+<button class="flex items-center justify-center rounded-xl h-10 px-6 bg-primary text-slate-950 text-sm font-bold shadow-sm hover:opacity-90 transition-opacity whitespace-nowrap">
+                        Book Now
                     </button>
 </div>
 </div>
-</section>
-<!-- Featured Tours Grid -->
-<section class="max-w-7xl mx-auto px-6 py-24" id="tours">
-<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
-<div class="max-w-2xl">
-<span class="text-primary font-bold tracking-widest uppercase text-sm">Curated Experiences</span>
-<h2 class="text-4xl font-extrabold mt-3 tracking-tight">Our Featured Tours</h2>
-<p class="text-slate-600 dark:text-slate-400 mt-4 text-lg">
-                        Carefully designed journeys that go beyond the usual tourist path, connecting you with the authentic soul of Medellín.
-                    </p>
+</header>
+<main class="flex-1">
+<!-- Hero Section -->
+<section class="px-6 py-12 md:py-20 lg:px-10">
+<div class="mx-auto max-w-7xl">
+<div class="relative overflow-hidden rounded-3xl bg-slate-900 min-h-[400px] flex items-center justify-center text-center p-8 shadow-2xl">
+<div class="absolute inset-0 z-0 opacity-60">
+<div class="w-full h-full bg-cover bg-center" data-alt="Panoramic view of Medellín valley at dusk" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuATNOTTu5POhF8afFPj5eh1-fgmjM2RSkHQhlFHTxrrlSfOwYVrsE-FB7fcoQdFVTNlPfwIpC1mJCVaVQDsZF6iavvLiFMSZ-PNFNypwDzivjaPGcwcyTjRpb6y0SXBdQezMbW9GT15-nHqewvEDa0MT4ODd3oYu8EDj3ewm1cKJaSnLU_ve0ZmSBeVWT3zsiJdHOu2bIxyKaZP-pPNuIzSAGCW62f04y79y2hMUXZBaJs0sW1_gxGyZLpP0oh6syEbVNN_dL5OBCQ');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
 </div>
-<div class="flex gap-2">
-<button class="p-3 border-2 border-primary/20 rounded-full hover:bg-primary/10 transition-colors">
+<div class="relative z-10 max-w-3xl">
+<span class="inline-block py-1 px-3 rounded-full bg-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-4">Official Travel Guide</span>
+<h1 class="text-white text-4xl md:text-6xl font-black leading-tight tracking-tight mb-6">
+                                Medellín Insider Blog
+                            </h1>
+<p class="text-slate-200 text-lg md:text-xl font-medium leading-relaxed mb-8">
+                                Discover hidden gems, local secrets, and the best experiences the City of Eternal Spring has to offer.
+                            </p>
+<div class="flex flex-wrap justify-center gap-4">
+<button class="rounded-xl h-12 px-8 bg-primary text-slate-950 font-bold hover:scale-105 transition-transform">Explore Stories</button>
+<button class="rounded-xl h-12 px-8 bg-white/10 backdrop-blur-sm text-white font-bold border border-white/20 hover:bg-white/20 transition-all">Latest Posts</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Filters -->
+<section class="px-6 lg:px-10">
+<div class="mx-auto max-w-7xl">
+<div class="flex items-center gap-3 overflow-x-auto pb-4 no-scrollbar">
+<button class="shrink-0 h-10 px-6 rounded-full bg-primary text-slate-950 text-sm font-bold">All</button>
+<button class="shrink-0 h-10 px-6 rounded-full bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 text-sm font-semibold hover:border-primary transition-colors">Dining</button>
+<button class="shrink-0 h-10 px-6 rounded-full bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 text-sm font-semibold hover:border-primary transition-colors">Nightlife</button>
+<button class="shrink-0 h-10 px-6 rounded-full bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 text-sm font-semibold hover:border-primary transition-colors">Wellness</button>
+<button class="shrink-0 h-10 px-6 rounded-full bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 text-sm font-semibold hover:border-primary transition-colors">Medical &amp; Cosmetic</button>
+<button class="shrink-0 h-10 px-6 rounded-full bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 text-sm font-semibold hover:border-primary transition-colors">Culture</button>
+</div>
+</div>
+</section>
+<!-- Blog Grid -->
+<section class="px-6 py-12 lg:px-10">
+<div class="mx-auto max-w-7xl">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative aspect-[16/10] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Delicious fresh arepas on a wooden plate" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAJe74f_TYU9bRB7_3piqD_caLcMX_0wZZIOJXLGLpI0CBsiA3p--oA8y7iSRgUcBIrj7d0TCYqVvQeLAV9-YC1Em6yz9aa-1UzthGo7Rpl09v7x5yuGtYenYkEZjnZ6xo3mIJgPR88xv5-8DAi_X3UglHiT_LCnZiNNlGKF3bn8AnOQUXtw7gtGpcxIcwNX7oTdl06vJO1hVa93y4C3Wh8ux8TuyE7Rc6EtA4J958zWUrfmu42ON60tCMV_Ag1AZ70f660TEDrRNQ');"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-primary text-slate-950 text-xs font-bold rounded-lg">Dining</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center gap-2 text-slate-400 text-xs font-medium mb-3">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>4 min read</span>
+<span>•</span>
+<span>Oct 12, 2023</span>
+</div>
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">5 Best Arepa Spots in Poblado</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6 flex-1">
+                                    Discover the authentic taste of paisa corn cakes in the heart of El Poblado. From traditional flavors to modern twists...
+                                </p>
+<a class="flex items-center gap-2 text-primary font-bold text-sm" href="#">
+                                    Read More
+                                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative aspect-[16/10] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Luxury spa treatment room with candles" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB5iIMJDdKCRT_u1xCw5Kn9OQ_p7-XBgh3q_EklPHoGOpp7C2ulNXdjCqLLnugEnGxhIPr4ga3l4UNeYPHa6HvSdEdYER1JpJ7QWK75iXj10iGY77DQn8npNwFOnRZPx2knxMpNqGQmPNK3cfIPCpweJhsbdW7Hnb_BCHxfxAVGwcnmXVFjSVPkgIKBKYaovFNOafNJBk7C2UXNLoYdSZEUVhAcRMVPRoE3HrtecnarqhSfIxEZ7agoxVAsWuA7yXnQEEYycKAnpMk');"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-primary text-slate-950 text-xs font-bold rounded-lg">Wellness</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center gap-2 text-slate-400 text-xs font-medium mb-3">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>6 min read</span>
+<span>•</span>
+<span>Oct 10, 2023</span>
+</div>
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Relaxation Guide: Top Spas in the Valley</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6 flex-1">
+                                    From thermal baths to luxury massages, find your zen in the Aburrá Valley with our curated list of relaxation havens...
+                                </p>
+<a class="flex items-center gap-2 text-primary font-bold text-sm" href="#">
+                                    Read More
+                                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative aspect-[16/10] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="People dancing salsa in a vibrant club" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCu5Fg3u1AHQC96Z2OUqb3OFNRv4A4Tgj8YxM7fdQU4Zke3bL9TZJ3NyCW72Wt3cfGQXisMgUqdq6K00299LdVSGFiPsuZM4XCBjPsehOCXN_w_HYL2ArLWcRNfp5MSw6Ak4DPA2lmSgNJgiRdDck6YqMSvASO7xiVVp1LL9xTwscW_N4DF8wAcUcN4y7vUge4Dymkh61dlb93TGfhzLYdLo2bwR7pZmH346M73TfVIe3LrM8itDGBDAwoW2v5nrPQuxVR8h1vQeow');"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-primary text-slate-950 text-xs font-bold rounded-lg">Nightlife</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center gap-2 text-slate-400 text-xs font-medium mb-3">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>5 min read</span>
+<span>•</span>
+<span>Oct 08, 2023</span>
+</div>
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Nightlife: Where to Dance Salsa</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6 flex-1">
+                                    A curated list of the most authentic salsa bars for an unforgettable night of rhythm and energy in Medellin...
+                                </p>
+<a class="flex items-center gap-2 text-primary font-bold text-sm" href="#">
+                                    Read More
+                                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative aspect-[16/10] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Modern medical facility interior" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCJyCenN6thWya5bPxiv_EP47FZWqCay9X3s0ixClFuUUfoWQxaWDvd9pJTth2AkKMVFB2B3k0M6OeXhRkpqfwQZKQdZu3GFiLamZGfEFENM3mJ_J41p6dOAFXZRe6N4lT_vcKpS9yDLr_FpqW4Fb_BBF1o48zWzLTH2xn1u8jWrj4zHNIfG4rWIJnm04qL_-7HBY_UoM_TYKAHEyu6xFgMibx6k1exbQApB19Z3Vkj5tRpmzcIS_qEOX6S01LOZdmHbz4qdjVZqSI');"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-primary text-slate-950 text-xs font-bold rounded-lg">Medical</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center gap-2 text-slate-400 text-xs font-medium mb-3">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>8 min read</span>
+<span>•</span>
+<span>Oct 05, 2023</span>
+</div>
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Medical Tourism: Why Medellín?</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6 flex-1">
+                                    Everything you need to know about the world-class healthcare facilities and recovery spaces in the city...
+                                </p>
+<a class="flex items-center gap-2 text-primary font-bold text-sm" href="#">
+                                    Read More
+                                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative aspect-[16/10] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Aerial view of Comuna 13 escalators" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_UeyMiMHdLyuN-IqxZzC8BPFW6aghOSY0tkT3ameOWyT3wZ3qL1I_9KbyaVTOXEBxyR49oGtx0nKi0xCvDWaH7in1nLsK064ntzrmp1wXrTp3viWeqHoURuCyPmKrwCpIAXVjO0tZ0QYm1PmaaSc9qd3l7PyrbTLo_HRGTUYvLEqe8NGh9MfRP-Hb4eX5KYUa_6IB9JW1bHrMLKmRU1Q1lAwcIaim47KdPzr0gXEpxeL1wLXQBApDv5Xb-Zsu0PUmaVeX9QvubE8');"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-primary text-slate-950 text-xs font-bold rounded-lg">Culture</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center gap-2 text-slate-400 text-xs font-medium mb-3">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>7 min read</span>
+<span>•</span>
+<span>Oct 01, 2023</span>
+</div>
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">The Transformation of Comuna 13</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6 flex-1">
+                                    A deep dive into the history, art, and resilience of Medellín's most vibrant neighborhood and its colorful street art...
+                                </p>
+<a class="flex items-center gap-2 text-primary font-bold text-sm" href="#">
+                                    Read More
+                                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative aspect-[16/10] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Pour over coffee being prepared" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuADl-L7I8_1gL7Su2W-HDlGndjmGt9lOq-5p0hSUThO5cerKmENWCE6CZYXmP95u-A2UE1aw1lIDqgYwKkc__-2FxyIYZUT78zhGiiwmNC0B_CYhlewCfJ9eUB244UsRj2vvrFIG9SMwQPYxcLMn64KhU_8uF23XbJjuxPbq7XKbDe7Bng7EDx9ZLPYeaGRuvv_NgQ0UC1UE_7dZKEMeubswpMrrDfW93FctaCnwdmVO6UOoH2UvmzFIJlVTm-FdL91xO3F2JOfKFg');"></div>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-primary text-slate-950 text-xs font-bold rounded-lg">Dining</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex items-center gap-2 text-slate-400 text-xs font-medium mb-3">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>5 min read</span>
+<span>•</span>
+<span>Sep 28, 2023</span>
+</div>
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Coffee Lover's Tour: From Bean to Cup</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6 flex-1">
+                                    The ultimate guide to experiencing the world-renowned Colombian coffee culture right here in the city...
+                                </p>
+<a class="flex items-center gap-2 text-primary font-bold text-sm" href="#">
+                                    Read More
+                                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="flex items-center justify-center gap-2 mt-16">
+<button class="size-10 flex items-center justify-center rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:bg-slate-50 transition-colors">
 <span class="material-symbols-outlined">chevron_left</span>
 </button>
-<button class="p-3 bg-primary text-background-dark rounded-full hover:bg-primary/90 transition-colors">
+<button class="size-10 flex items-center justify-center rounded-xl bg-primary text-slate-950 font-bold">1</button>
+<button class="size-10 flex items-center justify-center rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:bg-slate-50 transition-colors">2</button>
+<button class="size-10 flex items-center justify-center rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:bg-slate-50 transition-colors">3</button>
+<button class="size-10 flex items-center justify-center rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:bg-slate-50 transition-colors">
 <span class="material-symbols-outlined">chevron_right</span>
 </button>
 </div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<!-- Card 1: Coffee Tour -->
-<div class="group bg-white dark:bg-background-dark/50 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-none hover:border-primary/50 transition-all duration-300">
-<div class="relative h-64 overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Lush green coffee plantation in La Sierra hills" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEasKjRm1agtpNnuMj14Tlsx25xouyVaCgGplYBMu-xzwdhzs7492Gtk7Gh1koEDLqM3t_3C0JyKeco4mYkDTiz22yDZZWCmGRzuD10j4GDNtL8ryFdzkgGizdKlIADq97Md604zKlurGU2vlXnfW0ZpLCXXCYKfJiINm4KCmJ2TyldF1ZxTFkWDb2UpQ0YA_Fx8Gl19Tul-YCqui1n41GyXQCtDWezvHV4fK8lCzPLFTmfTtX2wzLPN31cZry-zli4nPN_Q0SSLk"/>
-<div class="absolute top-4 right-4 bg-primary text-background-dark font-bold px-3 py-1 rounded text-sm">Best Seller</div>
-</div>
-<div class="p-6">
-<h3 class="text-xl font-bold mb-3">Coffee Tour in La Sierra</h3>
-<p class="text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">Journey to the lush hillsides to learn the secrets of world-class Colombian coffee from local artisan farmers.</p>
-<div class="flex flex-col gap-3">
-<button class="w-full bg-primary hover:bg-primary/90 text-background-dark py-3 rounded-lg font-bold flex items-center justify-center gap-2 transition-colors">
-<span class="material-symbols-outlined text-lg">chat</span> Book via WhatsApp
-                            </button>
-<button class="w-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 py-3 rounded-lg font-bold flex items-center justify-center gap-2 transition-colors">
-<span class="material-symbols-outlined text-lg">star</span> Book on TripAdvisor
-                            </button>
-</div>
-</div>
-</div>
-<!-- Card 2: Santa Elena -->
-<div class="group bg-white dark:bg-background-dark/50 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-none hover:border-primary/50 transition-all duration-300">
-<div class="relative h-64 overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Hiking trail through misty forest in Santa Elena" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaqwWU3wlJJ6XtKLlHWE38XoJ9CRHlqd7KJGSFsV4RDZqhe9ji8Yzs60BAJuIPomCzPXzkBOIqnhH_n7WVmRrHSZe0343Wi_pjZR2hr7QMjMJcANf40o1ziktQ71JFRk6F2Agt8z_s48ZgjVftGvy-xrQoyyEYQ10CWBrDmyUwtYwYUidNMfMwr0Q8nPulPWyCNgpP_K5Mrk0BwwFgA2-GTRN5MtIemHKnOsyw8FDFtS3-Hej74TTPzxCbSybvaHpXsz8kA-FJchU"/>
-</div>
-<div class="p-6">
-<h3 class="text-xl font-bold mb-3">Santa Elena Hiking Experience</h3>
-<p class="text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">Breathe in the mountain air and discover the heritage of the Silleteros in this high-altitude nature trek.</p>
-<div class="flex flex-col gap-3">
-<button class="w-full bg-primary hover:bg-primary/90 text-background-dark py-3 rounded-lg font-bold flex items-center justify-center gap-2 transition-colors">
-<span class="material-symbols-outlined text-lg">chat</span> Book via WhatsApp
-                            </button>
-<button class="w-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 py-3 rounded-lg font-bold flex items-center justify-center gap-2 transition-colors">
-<span class="material-symbols-outlined text-lg">star</span> Book on TripAdvisor
-                            </button>
-</div>
-</div>
-</div>
-<!-- Card 3: Historical Tour -->
-<div class="group bg-white dark:bg-background-dark/50 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-none hover:border-primary/50 transition-all duration-300">
-<div class="relative h-64 overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Plaza Botero with iconic sculptures in Medellín" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKuMe4jOp-cjH3lVlPYF4dVs7V_UOd3jrMUUyN8BOtMk1K7lGgilMLII53jy6ni-aqEbS_d2E8ALVZQ-UuxbTCvUKPLul9UhzcnJIxZb6XbqYKk-uMP4p525rVR6re48Xx_VV_TglYsUMm2cjtE2FRIa9l7r32ibHTRlRmeFIzSQ1vaz7z95zN6UZVTjSIPTenA0EBKXx3b_VLOozxrrKH_Sf3liw2MKrLpovkbDi6KTrp1BrZnd0xjWjZexAlLOH2_ErnfdUwDv0"/>
-</div>
-<div class="p-6">
-<h3 class="text-xl font-bold mb-3">Centro Historical Tour</h3>
-<p class="text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A deep dive into the transformation of Medellín, from Plaza Botero to the vibrant local markets of the city center.</p>
-<div class="flex flex-col gap-3">
-<button class="w-full bg-primary hover:bg-primary/90 text-background-dark py-3 rounded-lg font-bold flex items-center justify-center gap-2 transition-colors">
-<span class="material-symbols-outlined text-lg">chat</span> Book via WhatsApp
-                            </button>
-<button class="w-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 py-3 rounded-lg font-bold flex items-center justify-center gap-2 transition-colors">
-<span class="material-symbols-outlined text-lg">star</span> Book on TripAdvisor
-                            </button>
-</div>
-</div>
-</div>
-<!-- Card 4: Night Tour -->
-<div class="group bg-white dark:bg-background-dark/50 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-none hover:border-primary/50 transition-all duration-300">
-<div class="relative h-64 overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Vibrant nightlife in Provenza with neon lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_KkK1C5n0uCGR12Ou3Jh8feiqVWq8qZQMJRmEafhti8A_W9cioIYGsA4Ds0Cs5BW9sPgw93lZ0yObha7iPWCtTnSAi37h3UEMisntbKoxYyxwI39WOJ99n_529jbvKBhXC8bsiHc9DCNPn-hqQjjGFFRw5OxlTq25y18zPlKaJOR-lTuMbf0dsYSrR1kNfsJDc6JEZEdVenDxJ0pYF_YWYjGtet4KYYyrFjAUnMPG_MG2TvdkR0kwCFiZUgHLE8USWMo-E67kuGU"/>
-</div>
-<div class="p-6">
-<h3 class="text-xl font-bold mb-3">Provenza Night Tour</h3>
-<p class="text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">Experience the rhythm of the city. Discover the best hidden bars and rooftop lounges in El Poblado.</p>
-<div class="flex flex-col gap-3">
-<button class="w-full bg-primary hover:bg-primary/90 text-background-dark py-3 rounded-lg font-bold flex items-center justify-center gap-2 transition-colors">
-<span class="material-symbols-outlined text-lg">chat</span> Book via WhatsApp
-                            </button>
-<button class="w-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 py-3 rounded-lg font-bold flex items-center justify-center gap-2 transition-colors">
-<span class="material-symbols-outlined text-lg">star</span> Book on TripAdvisor
-                            </button>
-</div>
-</div>
-</div>
-<!-- Card 5: Food Scene -->
-<div class="group bg-white dark:bg-background-dark/50 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl shadow-slate-200/50 dark:shadow-none hover:border-primary/50 transition-all duration-300">
-<div class="relative h-64 overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Variety of traditional Colombian street food dishes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBef7YWsjk-D0EsTNqalgQQeyNDD9kS5fESF0jTmZQvJThCu2a8qAuqB9GvPJZqt5P7zFXrPW21wNWrb6ULCiXPBy730fKcMC5wM1Ju2c9juFOMh3m-RINma9Ukky-R7nt9kMG5UGMBKgd2Fijmy3gOy17qg6wXUBMk8ircVlZYA3eYhfCzlOJa8IxTzC1v27zf0QocIZxlE5DE1dsqaRcZMh_YU9im4TaSB8kLurbeEAutqv4QqsINrW2nsuuUyqa0aPF392RL-Q8"/>
-</div>
-<div class="p-6">
-<h3 class="text-xl font-bold mb-3">Food Scene Tour</h3>
-<p class="text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">Taste your way through the city. From traditional arepas to exotic tropical fruits and modern fusion plates.</p>
-<div class="flex flex-col gap-3">
-<button class="w-full bg-primary hover:bg-primary/90 text-background-dark py-3 rounded-lg font-bold flex items-center justify-center gap-2 transition-colors">
-<span class="material-symbols-outlined text-lg">chat</span> Book via WhatsApp
-                            </button>
-<button class="w-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 py-3 rounded-lg font-bold flex items-center justify-center gap-2 transition-colors">
-<span class="material-symbols-outlined text-lg">star</span> Book on TripAdvisor
-                            </button>
-</div>
-</div>
-</div>
-<!-- Custom CTA Card -->
-<div class="bg-primary/20 dark:bg-primary/10 rounded-2xl p-8 border-2 border-dashed border-primary/40 flex flex-col items-center justify-center text-center">
-<div class="bg-primary p-4 rounded-full mb-6">
-<span class="material-symbols-outlined text-3xl text-background-dark font-bold">celebration</span>
-</div>
-<h3 class="text-2xl font-bold mb-4">Custom Group Experiences</h3>
-<p class="text-slate-600 dark:text-slate-400 mb-8">Traveling with a group or looking for something completely unique? We build tailored itineraries.</p>
-<button class="bg-background-dark text-white dark:bg-primary dark:text-background-dark px-8 py-4 rounded-xl font-bold transition-transform hover:scale-105">
-                        Request Custom Tour
-                    </button>
-</div>
-</div>
 </section>
-<!-- CTA Section -->
-<section class="bg-slate-50 dark:bg-slate-900/50 py-24 px-6" id="insider-guide">
-<div class="max-w-7xl mx-auto">
-<div class="text-center mb-16">
-<span class="text-primary font-bold tracking-widest uppercase text-sm">Local Knowledge</span>
-<h2 class="text-4xl md:text-5xl font-extrabold mt-3 tracking-tight dark:text-white">Medellín Insider Guide</h2>
-<p class="text-slate-600 dark:text-slate-400 mt-4 text-lg max-w-2xl mx-auto">
-        Beyond the tours, explore our curated selection of the absolute best spots in the city across lifestyle and wellness.
-      </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-<!-- Restaurants -->
-<div class="bg-white dark:bg-background-dark rounded-2xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-800 flex flex-col">
-<div class="h-48 overflow-hidden">
-<img alt="Juicy steak on a grill" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBef7YWsjk-D0EsTNqalgQQeyNDD9kS5fESF0jTmZQvJThCu2a8qAuqB9GvPJZqt5P7zFXrPW21wNWrb6ULCiXPBy730fKcMC5wM1Ju2c9juFOMh3m-RINma9Ukky-R7nt9kMG5UGMBKgd2Fijmy3gOy17qg6wXUBMk8ircVlZYA3eYhfCzlOJa8IxTzC1v27zf0QocIZxlE5DE1dsqaRcZMh_YU9im4TaSB8kLurbeEAutqv4QqsINrW2nsuuUyqa0aPF392RL-Q8"/>
-</div>
-<div class="p-6 flex-grow">
-<span class="text-primary text-xs font-bold uppercase tracking-widest">Restaurants</span>
-<h3 class="text-xl font-bold mt-2 mb-3">Best Parrilla in Town</h3>
-<p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
-            Discover where the locals go for the most authentic charcoal-grilled steaks and traditional sides.
-          </p>
-</div>
-<div class="p-6 pt-0">
-<a class="text-primary font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all" href="#">
-            Read Review <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-</div>
-</div>
-<!-- Clubs -->
-<div class="bg-white dark:bg-background-dark rounded-2xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-800 flex flex-col">
-<div class="h-48 overflow-hidden">
-<img alt="Neon lights in a nightclub" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_KkK1C5n0uCGR12Ou3Jh8feiqVWq8qZQMJRmEafhti8A_W9cioIYGsA4Ds0Cs5BW9sPgw93lZ0yObha7iPWCtTnSAi37h3UEMisntbKoxYyxwI39WOJ99n_529jbvKBhXC8bsiHc9DCNPn-hqQjjGFFRw5OxlTq25y18zPlKaJOR-lTuMbf0dsYSrR1kNfsJDc6JEZEdVenDxJ0pYF_YWYjGtet4KYYyrFjAUnMPG_MG2TvdkR0kwCFiZUgHLE8USWMo-E67kuGU"/>
-</div>
-<div class="p-6 flex-grow">
-<span class="text-primary text-xs font-bold uppercase tracking-widest">Clubs</span>
-<h3 class="text-xl font-bold mt-2 mb-3">El Poblado Nightlife</h3>
-<p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
-            Navigate the rhythm of Medellin's most famous party district with our top lounge and club picks.
-          </p>
-</div>
-<div class="p-6 pt-0">
-<a class="text-primary font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all" href="#">
-            Read Review <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-</div>
-</div>
-<!-- Spa & Wellness -->
-<div class="bg-white dark:bg-background-dark rounded-2xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-800 flex flex-col">
-<div class="h-48 overflow-hidden">
-<img alt="Serene mountain spa setting" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaqwWU3wlJJ6XtKLlHWE38XoJ9CRHlqd7KJGSFsV4RDZqhe9ji8Yzs60BAJuIPomCzPXzkBOIqnhH_n7WVmRrHSZe0343Wi_pjZR2hr7QMjMJcANf40o1ziktQ71JFRk6F2Agt8z_s48ZgjVftGvy-xrQoyyEYQ10CWBrDmyUwtYwYUidNMfMwr0Q8nPulPWyCNgpP_K5Mrk0BwwFgA2-GTRN5MtIemHKnOsyw8FDFtS3-Hej74TTPzxCbSybvaHpXsz8kA-FJchU"/>
-</div>
-<div class="p-6 flex-grow">
-<span class="text-primary text-xs font-bold uppercase tracking-widest">Spa &amp; Wellness</span>
-<h3 class="text-xl font-bold mt-2 mb-3">Relaxing Retreats</h3>
-<p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
-            Find your sanctuary in the mountains with our review of the most exclusive spa treatments available.
-          </p>
-</div>
-<div class="p-6 pt-0">
-<a class="text-primary font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all" href="#">
-            Read Review <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-</div>
-</div>
-<!-- Medical & Cosmetic -->
-<div class="bg-white dark:bg-background-dark rounded-2xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-800 flex flex-col">
-<div class="h-48 overflow-hidden">
-<img alt="Modern medical facility" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKuMe4jOp-cjH3lVlPYF4dVs7V_UOd3jrMUUyN8BOtMk1K7lGgilMLII53jy6ni-aqEbS_d2E8ALVZQ-UuxbTCvUKPLul9UhzcnJIxZb6XbqYKk-uMP4p525rVR6re48Xx_VV_TglYsUMm2cjtE2FRIa9l7r32ibHTRlRmeFIzSQ1vaz7z95zN6UZVTjSIPTenA0EBKXx3b_VLOozxrrKH_Sf3liw2MKrLpovkbDi6KTrp1BrZnd0xjWjZexAlLOH2_ErnfdUwDv0"/>
-</div>
-<div class="p-6 flex-grow">
-<span class="text-primary text-xs font-bold uppercase tracking-widest">Medical &amp; Cosmetic</span>
-<h3 class="text-xl font-bold mt-2 mb-3">World-class Wellness</h3>
-<p class="text-slate-600 dark:text-slate-400 text-sm mb-4">
-            Medellín is a global hub for care. See why people travel from all over for these top-tier services.
-          </p>
-</div>
-<div class="p-6 pt-0">
-<a class="text-primary font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all" href="#">
-            Read Review <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</section><section class="bg-background-dark py-20 px-6 overflow-hidden relative">
-<div class="absolute top-0 right-0 w-1/3 h-full bg-primary opacity-10 blur-[100px] rounded-full translate-x-1/2 -translate-y-1/2"></div>
-<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 relative z-10">
-<div class="lg:w-1/2">
-<h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Ready to see <span class="text-primary">Medellín</span> like a local?</h2>
-<p class="text-slate-400 text-lg mb-8">Our guides are storytellers, experts, and above all, proud Paisas who can't wait to share their city with you.</p>
-<div class="flex flex-wrap gap-4">
-<div class="flex items-center gap-3 bg-white/5 border border-white/10 p-4 rounded-xl">
-<span class="material-symbols-outlined text-primary">verified_user</span>
-<span class="text-white font-medium">Licensed Guides</span>
-</div>
-<div class="flex items-center gap-3 bg-white/5 border border-white/10 p-4 rounded-xl">
-<span class="material-symbols-outlined text-primary">lock</span>
-<span class="text-white font-medium">Secure Booking</span>
-</div>
-<div class="flex items-center gap-3 bg-white/5 border border-white/10 p-4 rounded-xl">
-<span class="material-symbols-outlined text-primary">thumb_up</span>
-<span class="text-white font-medium">5-Star Rated</span>
-</div>
-</div>
-</div>
-<div class="lg:w-1/2 w-full">
-<div class="bg-white dark:bg-slate-900 p-8 rounded-3xl shadow-2xl">
-<h4 class="text-2xl font-bold mb-6 text-slate-900 dark:text-white">Quick Inquiry</h4>
-<form class="space-y-4">
-<div>
-<label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Name</label>
-<input class="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-xl p-4 focus:ring-2 focus:ring-primary" placeholder="Enter your name" type="text"/>
-</div>
-<div class="grid grid-cols-2 gap-4">
-<div>
-<label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Arrival Date</label>
-<input class="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-xl p-4 focus:ring-2 focus:ring-primary" type="date"/>
-</div>
-<div>
-<label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Tour Interest</label>
-<select class="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-xl p-4 focus:ring-2 focus:ring-primary">
-<option>Coffee Tour</option>
-<option>Food Tour</option>
-<option>History Tour</option>
-<option>Other</option>
-</select>
-</div>
-</div>
-<button class="w-full bg-primary text-background-dark font-bold py-4 rounded-xl mt-4 hover:shadow-lg hover:shadow-primary/20 transition-all">
-                                Send WhatsApp Inquiry
-                            </button>
+<!-- Newsletter Section -->
+<section class="px-6 py-20 lg:px-10 bg-slate-900 dark:bg-slate-950">
+<div class="mx-auto max-w-4xl text-center">
+<h2 class="text-3xl md:text-4xl font-black text-white mb-4">Never miss an adventure</h2>
+<p class="text-slate-400 text-lg mb-10 max-w-2xl mx-auto">
+                        Sign up for our newsletter to receive the latest travel guides, exclusive offers, and insider tips from Medellín delivered to your inbox.
+                    </p>
+<form class="flex flex-col sm:flex-row gap-4 items-stretch justify-center max-w-lg mx-auto">
+<input class="flex-1 rounded-xl px-5 py-3 bg-white/10 border-white/20 text-white placeholder:text-slate-500 focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Enter your email" type="email"/>
+<button class="rounded-xl px-8 py-3 bg-primary text-slate-950 font-bold hover:scale-105 transition-transform" type="submit">Subscribe</button>
 </form>
-</div>
-</div>
+<p class="text-slate-600 text-xs mt-6">
+                        By subscribing, you agree to our Privacy Policy and Terms of Service.
+                    </p>
 </div>
 </section>
 </main>
-<footer class="bg-white dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 py-12">
-<div class="max-w-7xl mx-auto px-6">
-<div class="flex flex-col md:flex-row justify-between items-center gap-8 border-b border-slate-200 dark:border-slate-800 pb-12 mb-12">
-<div class="flex items-center gap-3">
-<div class="bg-primary p-2 rounded-lg">
-<span class="material-symbols-outlined text-background-dark">landscape</span>
+<!-- Footer -->
+<footer class="bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 px-6 py-12 md:px-10">
+<div class="mx-auto max-w-7xl">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="size-8 bg-primary flex items-center justify-center rounded-lg text-background-dark">
+<span class="material-symbols-outlined text-xl">travel_explore</span>
 </div>
-<span class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">medellincool<span class="text-primary">.tours</span></span>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-extrabold">Medellín Cool Tours</h2>
 </div>
-<div class="flex gap-8">
-<a class="text-slate-500 hover:text-primary transition-colors font-bold" href="#">Instagram</a>
-<a class="text-slate-500 hover:text-primary transition-colors font-bold" href="#">Facebook</a>
-<a class="text-slate-500 hover:text-primary transition-colors font-bold" href="#">TripAdvisor</a>
+<p class="text-slate-500 dark:text-slate-400 text-sm max-w-sm leading-relaxed mb-6">
+                            Experience the real Medellín through the eyes of locals. We offer unique, sustainable, and unforgettable tours across the Aburrá Valley.
+                        </p>
+<div class="flex gap-4">
+<a class="size-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">public</span>
+</a>
+<a class="size-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
 </div>
 </div>
-<div class="flex flex-col md:flex-row justify-between items-center gap-4 text-slate-400 text-sm font-medium">
-<p>© 2024 Medellin Cool Tours. All rights reserved. RNT: 123456</p>
-<div class="flex gap-6">
-<a class="hover:text-primary" href="#">Privacy Policy</a>
-<a class="hover:text-primary" href="#">Terms of Service</a>
+<div>
+<h4 class="text-slate-900 dark:text-slate-100 font-bold mb-6">Explore</h4>
+<ul class="space-y-4 text-sm font-medium text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">All Tours</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Private Guides</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Day Trips</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Destinations</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-slate-900 dark:text-slate-100 font-bold mb-6">Company</h4>
+<ul class="space-y-4 text-sm font-medium text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Terms of Use</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-400 text-xs">© 2023 Medellín Cool Tours. All rights reserved.</p>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2 text-slate-400 text-xs">
+<span class="material-symbols-outlined text-sm">language</span>
+<span>English (US)</span>
+</div>
+<div class="flex items-center gap-2 text-slate-400 text-xs">
+<span class="material-symbols-outlined text-sm">payments</span>
+<span>USD</span>
+</div>
 </div>
 </div>
 </div>
 </footer>
+</div>
 </body></html>

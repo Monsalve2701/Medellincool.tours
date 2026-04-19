@@ -1,12 +1,14 @@
 "use client"
 import React from 'react';
 import Link from 'next/link';
+import { urlForImage } from '@/sanity/image';
 
 interface TourType {
     id: string;
     title: string;
+    slug?: string;
     description: string;
-    image: string;
+    image: any;
     rating: number;
     reviews: number;
     duration: string;
@@ -25,10 +27,10 @@ export const TourCard: React.FC<TourCardProps> = ({ tour, className = '' }) => {
         <div className={`group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-xl shadow-slate-200/40 hover:border-[#49e619]/50 transition-all duration-300 flex flex-col ${className}`}>
 
             {/* Image Container */}
-            <Link href={`/tours/${tour.id}`} className="relative h-64 overflow-hidden shrink-0 block">
+            <Link href={`/tours/${tour.slug || tour.id}`} className="relative h-64 overflow-hidden shrink-0 block">
                 <div className="w-full h-full relative overflow-hidden">
                     <img
-                        src={tour.image}
+                        src={tour.image ? urlForImage(tour.image).url() : undefined}
                         alt={tour.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
@@ -41,7 +43,7 @@ export const TourCard: React.FC<TourCardProps> = ({ tour, className = '' }) => {
             </Link>
 
             <div className="p-6 flex flex-col flex-grow">
-                <Link href={`/tours/${tour.id}`}>
+                <Link href={`/tours/${tour.slug || tour.id}`}>
                     <h3 className="text-xl font-bold mb-3 text-slate-900 tracking-tight hover:text-[#49e619] transition-colors">{tour.title}</h3>
                 </Link>
 

@@ -1,9 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { TOURS_DATA } from '@/data/mockData';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
+import { client } from '@/sanity/client';
+import { tourBySlugQuery } from '@/sanity/queries';
+import { urlForImage } from '@/sanity/image';
 
 interface PageProps {
     params: Promise<{ id: string }>;
@@ -11,16 +13,20 @@ interface PageProps {
 
 export default async function TourDetailsPage({ params }: PageProps) {
     const { id } = await params;
-    const tour = TOURS_DATA.find((t) => t.id === id);
+    const tour = await client.fetch(tourBySlugQuery, { slug: id });
 
     if (!tour) {
         notFound();
     }
 
     // Default gallery if none exists (just in case)
-    const gallery = tour.gallery || [tour.image];
+    const mainImageUrl = tour.image ? urlForImage(tour.image).url() : undefined;
+    const gallery = tour.gallery && tour.gallery.length > 0 
+        ? tour.gallery.map((img: any) => urlForImage(img).url()) 
+        : [mainImageUrl];
+        
     // Ensure we have at least 5 images for the grid, otherwise repeat or handle gracefully
-    const gridImages = [...gallery, ...Array(5).fill(tour.image)].slice(0, 5);
+    const gridImages = [...gallery, ...Array(5).fill(mainImageUrl)].slice(0, 5);
     const totalPhotos = gallery.length;
 
     return (

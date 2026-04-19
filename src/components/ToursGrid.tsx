@@ -1,12 +1,26 @@
 import React from 'react';
 import { TourCard } from './TourCard';
-import { TOURS_DATA } from '@/data/mockData';
+
+interface TourType {
+    id: string;
+    title: string;
+    slug?: string;
+    description: string;
+    image: any;
+    rating: number;
+    reviews: number;
+    duration: string;
+    price: string;
+    tags: string[];
+    location?: string;
+}
 
 interface ToursGridProps {
+    readonly tours: TourType[];
     readonly className?: string;
 }
 
-export const ToursGrid: React.FC<ToursGridProps> = ({ className = '' }) => {
+export const ToursGrid: React.FC<ToursGridProps> = ({ tours, className = '' }) => {
     return (
         <section id="tours" className={`py-20 lg:py-32 bg-white ${className}`}>
             <div className="container mx-auto px-6">
@@ -35,7 +49,7 @@ export const ToursGrid: React.FC<ToursGridProps> = ({ className = '' }) => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {TOURS_DATA.map((tour) => (
+                    {tours.map((tour) => (
                         <TourCard key={tour.id} tour={tour} />
                     ))}
                 </div>

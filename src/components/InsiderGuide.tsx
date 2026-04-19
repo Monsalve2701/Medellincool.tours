@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import { INSIDER_GUIDE_DATA } from '@/data/mockData';
 

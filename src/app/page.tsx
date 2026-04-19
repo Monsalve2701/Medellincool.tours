@@ -4,13 +4,17 @@ import { ToursGrid } from '@/components/ToursGrid';
 import { InsiderGuide } from '@/components/InsiderGuide';
 import { CtaSection } from '@/components/CtaSection';
 import { Footer } from '@/components/Footer';
+import { client } from '@/sanity/client';
+import { allToursQuery } from '@/sanity/queries';
 
-export default function Home() {
+export default async function Home() {
+  const tours = await client.fetch(allToursQuery);
+
   return (
     <main className="min-h-screen">
       <Navbar />
       <HeroSection />
-      <ToursGrid />
+      <ToursGrid tours={tours} />
       <InsiderGuide />
       <CtaSection />
       <Footer />

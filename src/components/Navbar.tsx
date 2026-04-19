@@ -34,8 +34,8 @@ export const Navbar: React.FC<NavbarProps> = ({
 
                 {/* CTA Button */}
                 <div className="hidden md:block">
-                    <Link href="#tours" className="bg-[#49e619] hover:bg-[#3db814] text-slate-900 px-6 py-2.5 rounded-full font-bold transition-all shadow-sm">
-                        Book Now
+                    <Link href="/blog" className="bg-[#49e619] hover:bg-[#3db814] text-slate-900 px-6 py-2.5 rounded-full font-bold transition-all shadow-sm">
+                        Explore
                     </Link>
                 </div>
 
